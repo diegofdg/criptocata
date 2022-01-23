@@ -1,0 +1,10 @@
+.titulo-not-found {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.image-not-found {
+    width: 60%;
+    display: block;
+    margin: 0px auto;
+}
