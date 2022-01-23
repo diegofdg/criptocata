@@ -14,6 +14,7 @@ import { CriptomonedaComponent } from './criptomoneda/criptomoneda.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule } from '@angular/router';
 import { MovimientosComponent } from './movimientos/movimientos.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MovimientosComponent } from './movimientos/movimientos.component';
   imports: [
     CommonModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports: [
     ServiciosComponent
