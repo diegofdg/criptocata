@@ -13,6 +13,7 @@ import { TransaccionesComponent } from './transacciones/transacciones.component'
 import { CriptomonedaComponent } from './criptomoneda/criptomoneda.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule } from '@angular/router';
+import { MovimientosComponent } from './movimientos/movimientos.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { RouterModule } from '@angular/router';
     IntegranteComponent,
     OperacionesComponent,
     TransaccionesComponent,
-    CriptomonedaComponent,    
+    CriptomonedaComponent,
+    MovimientosComponent,    
   ],
   imports: [
     CommonModule,

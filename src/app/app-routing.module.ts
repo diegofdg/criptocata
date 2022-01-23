@@ -4,6 +4,7 @@ import { CriptomonedaComponent } from './pages/criptomoneda/criptomoneda.compone
 import { IniciarSesionComponent } from './pages/iniciar-sesion/iniciar-sesion.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { IntegranteComponent } from './pages/integrante/integrante.component';
+import { MovimientosComponent } from './pages/movimientos/movimientos.component';
 import { OperacionesComponent } from './pages/operaciones/operaciones.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   
   {path:'inicio', component: InicioComponent,
     children:[
+      {path: 'movimientos', component: MovimientosComponent},
       {path:'operaciones', component: OperacionesComponent},
       {path:'transacciones', component: TransaccionesComponent},
       {path:'criptomoneda', component: CriptomonedaComponent},
@@ -23,7 +25,7 @@ const routes: Routes = [
   {path: 'quienes-somos', component: QuienesSomosComponent},
   {path: 'quienes-somos/:id', component: IntegranteComponent},
   {path: 'registro', component:RegistroComponent},
-  {path: 'iniciar-sesion', component: IniciarSesionComponent},
+  {path: 'iniciar-sesion', component: IniciarSesionComponent},  
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];
